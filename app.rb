@@ -49,7 +49,8 @@ class App < Sinatra::Base
     @operation = params[:operation]
     @number1 = params[:number1].to_i 
     @number2 = params[:number2].to_i 
-    case @operatoin
+    case @operation 
+    when 
   
 
 end
