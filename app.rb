@@ -23,7 +23,7 @@ class App < Sinatra::Base
     @phrase = params[:phrase]
     n = 0 
     while n < @number do 
-      "#{@phrase}"
+      puts "#{@phrase}"
       n = n + 1 
     end 
   end 
