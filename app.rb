@@ -29,5 +29,27 @@ class App < Sinatra::Base
     end 
     "#{@str}"
   end 
+  
+  get '/say/:word1/:word2/:word3/:word4/:word5' do 
+    @word1 = params[:word1].to_s 
+    @word2 = params[:word2].to_s 
+    @word3 = params[:word3].to_s 
+    @word4 = params[:word4].to_s 
+    @word5 = params[:word5].to_s 
+    @str = ""
+    @str << @word1
+    @str << @word2
+    @str << @word3
+    @str << @word4
+    @str << @word5
+    "#{@str}"
+  end 
+  
+  get '/:operation/:number1/:number2' do 
+    @operation = params[:operation]
+    @number1 = params[:number1].to_i 
+    @number2 = params[:number2].to_i 
+    case @operatoin
+  
 
 end
