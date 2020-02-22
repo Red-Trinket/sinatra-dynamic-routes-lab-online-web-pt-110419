@@ -52,7 +52,12 @@ class App < Sinatra::Base
     case @operation 
     when "add"
       @result = @number2 + @number1
-      whe
+    when "multiply"
+      @result = @number1 * @number2
+    when "subtract"
+      @result = @number1 - @number2 
+    when "divide"
+      @result = @number1 / @number2
   
 
 end
