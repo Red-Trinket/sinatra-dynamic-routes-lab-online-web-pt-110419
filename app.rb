@@ -24,7 +24,7 @@ class App < Sinatra::Base
     @str = "" 
     n = 0 
     while n < @number do 
-      @str << "#{@phrase}\n"
+      @str << "#{@phrase}\n\n"
       n = n + 1 
     end 
     "#{@str}"
