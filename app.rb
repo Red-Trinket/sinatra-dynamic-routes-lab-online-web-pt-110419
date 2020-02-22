@@ -50,7 +50,9 @@ class App < Sinatra::Base
     @number1 = params[:number1].to_i 
     @number2 = params[:number2].to_i 
     case @operation 
-    when 
+    when "add"
+      @result = @number2 + @number1
+      whe
   
 
 end
