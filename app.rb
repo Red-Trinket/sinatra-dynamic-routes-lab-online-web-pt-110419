@@ -37,11 +37,11 @@ class App < Sinatra::Base
     @word4 = params[:word4].to_s 
     @word5 = params[:word5].to_s 
     @str = ""
-    @str << @word1
-    @str << @word2
-    @str << @word3
-    @str << @word4
-    @str << @word5
+    @str << @word1 + " "
+    @str << @word2 + " "
+    @str << @word3 + " "
+    @str << @word4 + " "
+    @str << @word5 +"."
     "#{@str}"
   end 
   
