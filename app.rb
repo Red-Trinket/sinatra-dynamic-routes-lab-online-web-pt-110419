@@ -17,8 +17,5 @@ class App < Sinatra::Base
     @square = @number ** 2 
     "#{@square}"
   end 
-  
-  get 
-    
 
 end
